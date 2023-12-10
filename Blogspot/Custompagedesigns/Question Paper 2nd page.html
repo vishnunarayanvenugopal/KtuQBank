@@ -1,0 +1,456 @@
+<div dir="ltr" style="text-align: left;" trbidi="on"><br /></div>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet"/>
+<style>
+
+body {
+    font: normal normal 14px Montserrat, arial, sans-serif !important;
+
+}
+   /*! CSS Used from: Embedded */
+  
+   
+   main section .wrap .holder .demo {
+   min-height: 120px;
+   padding: 2em 0;
+   display: -webkit-box;
+   display: flex;
+   word-wrap: break-word;
+   white-space:normal;
+   -webkit-box-pack: center;
+   justify-content: center;
+   align-content: center;
+   }
+   .rkmd-btn {
+   display: inline-block;
+   position: relative;
+   cursor: pointer;
+   height: 75px;
+   min-width:150px;
+width: -webkit-fill-available;
+   word-wrap: break-word;
+   white-space:normal;
+font-family: 'Roboto', sans-serif;
+   padding-top: 5px;
+   line-height: 1.5em;
+   padding: 0 1.5rem;
+   color: #424242;
+   font-size: 15px;
+   font-weight: 600;
+   
+   letter-spacing: .8px;
+   text-align: center;
+   text-decoration: none;
+   text-transform: uppercase;
+   vertical-align: middle;
+   white-space: nowrap;
+   white-space:normal;
+   outline: none;
+   border: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   border-radius: 2px;
+   -webkit-transition: all .3s ease-out;
+   transition: all .3s ease-out;
+   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.225);
+   }
+   .rkmd-btn:hover {
+   text-decoration: none;
+   word-wrap: break-word;
+   box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.225);
+   }
+   .rkmd-btn.btn-lightBlue {
+   color: #FFF;
+   background-color: #03a9f4;
+   }
+   .rkmd-btn.btn-lightBlue:hover {
+   background-color: #23b9fc;
+   }
+   .ripple-effect {
+   display: inline-block;
+   position: relative;
+   overflow: hidden;
+   cursor: pointer;
+   vertical-align: middle;
+   word-wrap: break-word;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   z-index: 1;
+   }
+
+  /*! CSS Used fontfaces */
+   @font-face {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 300;
+   src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCRc4EsA.woff2) format('woff2');
+   unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+   }
+   @font-face {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 300;
+   src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fABc4EsA.woff2) format('woff2');
+   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+   }
+   @font-face {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 300;
+   src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2) format('woff2');
+   unicode-range: U+1F00-1FFF;
+   }
+   @font-face {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 300;
+   src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBxc4EsA.woff2) format('woff2');
+   unicode-range: U+0370-03FF;
+   }
+   @font-face {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 300;
+   src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCxc4EsA.woff2) format('woff2');
+   unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+   }
+   @font-face {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 300;
+   src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2) format('woff2');
+   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+   }
+   @font-face {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 300;
+   src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format('woff2');
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+   }
+.body{
+font-family: !important;
+}
+ 
+   .breadcrumbs {
+   display:none;
+   }
+   .post-info {
+   display:none;
+   }
+   /* ----- unnecesarry styles ----- */
+   .box {
+   max-width: 100%;
+   position: relative;
+   text-align: center;
+   }
+   .box-border {
+   text-align: left;
+   border: 4px solid #456; /* <--- border-color */
+   border-top: none;
+   }
+   .box-header {
+   position: relative;
+   overflow: hidden;
+   }
+   .box-header:before {
+   content:'';
+   display: block;
+   position: absolute;
+   border-left: 4px solid #f00; /* <--- border-color */
+   border-right: 4px solid #f00; /* <--- border-color */
+   right: 0;
+   left: 0;
+   top: 50%;
+   height: 50%;
+   }
+   .doubleside {
+   margin: 0;
+   position: relative;
+   display: inline-block;
+   padding: 0 10px;
+   max-width: 70%;
+   }
+   .doubleside:before {
+   content:'';
+   display: block;
+   position: absolute;
+   right: 100%;
+   top: 50%;
+   width: 9999px;
+   height: 4px;
+   background-color: #f00; /* <--- border-color */
+   }
+   .doubleside:after {
+   content:'';
+   display: block;
+   position: absolute;
+   left: 100%;
+   top: 50%;
+   width: 9999px;
+   height: 4px;
+   background-color: #f00; /* <--- border-color */
+   }
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+</style>
+<div class="box">
+   <div class="box-header">
+      <h3 class="doubleside">Semester 3 (S3)</h3>
+   </div>
+   <div class="box-border">
+      <div class="container" style="
+                  padding-top: 7px;
+                  padding-bottom: 15px;
+                  ">
+         <div class="row">
+            <div class="col" style="
+    padding-top: 15px;
+">
+               <div class="demo" onclick="window.location.href = 'ktuqbank.blogspot.com';"><button class="rkmd-btn btn-lightBlue ripple-effect"  style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  ">Linear Algebra & Complex Analysis</button></div>
+            </div>
+            <div class="col" style="
+    padding-top: 15px;
+">
+               <div class="demo" onclick="window.location.href = 'ktuqbank.blogspot.com';"><button class="rkmd-btn btn-lightBlue ripple-effect"  style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  ">Discrete Computational Structures</button></div>
+            </div>
+            <div class="col" style="
+    padding-top: 15px;
+">
+               <div class="demo" onclick="window.location.href = 'ktuqbank.blogspot.com';"><button class="rkmd-btn btn-lightBlue ripple-effect" style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  ">Switching Theory and Logic Design</button></div>
+            </div>
+<p></p>
+<br>
+         </div>
+<div class="row">
+            <div class="col" style="
+    padding-top: 15px;
+">
+               <div class="demo" onclick="window.location.href = 'ktuqbank.blogspot.com';"><button class="rkmd-btn btn-lightBlue ripple-effect"  style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  ">Data Structures</button></div>
+            </div>
+            <div class="col" style="
+    padding-top: 15px;
+">
+               <div class="demo" onclick="window.location.href = 'ktuqbank.blogspot.com';"><button class="rkmd-btn btn-lightBlue ripple-effect"  style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  ">Electronic Devices & Circuits</button></div>
+            </div>
+            
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="box" style="
+   padding-top: 50px;
+   ">
+<div class="box-header">
+   <h3 class="doubleside">Elective</h3>
+</div>
+<div class="box-border">
+<div class="container" style="
+   padding-top: 7px;
+   padding-bottom: 15px;
+   ">
+   <div class="row">
+      <div class="col" style="
+         padding-top: 15px;
+         ">
+         <div class="demo" onclick="window.location.href = 'ktuqbank.blogspot.com';"><button class="rkmd-btn btn-lightBlue ripple-effect"  style="
+            padding-top: 7px;
+            padding-bottom: 7px;
+            ">Life Skills</button></div>
+      </div>
+      <div class="col" style="
+         padding-top: 15px;
+         ">
+         <div class="demo" onclick="window.location.href = 'ktuqbank.blogspot.com';"><button class="rkmd-btn btn-lightBlue ripple-effect"  style="
+            padding-top: 7px;
+            padding-bottom: 7px;
+            ">Business economics</button></div>
+</div></div>
+</div></div></div>
+<div class="box" style="
+    padding-top: 50px;
+">
+   <div class="box-header">
+      <h3 class="doubleside">Semester 4 (S4)</h3>
+   </div>
+   <div class="box-border">
+      <div class="container" style="
+                  padding-top: 7px;
+                  padding-bottom: 15px;
+                  ">
+         <div class="row">
+            <div class="col" style="
+    padding-top: 15px;
+">
+               <div class="demo" onclick="window.location.href = 'ktuqbank.blogspot.com';"><button class="rkmd-btn btn-lightBlue ripple-effect"  style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  ">Probability Distributions, Transforms and Numerical Methods</button></div>
+            </div>
+            <div class="col" style="
+    padding-top: 15px;
+">
+               <div class="demo" onclick="window.location.href = 'ktuqbank.blogspot.com';"><button class="rkmd-btn btn-lightBlue ripple-effect"  style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  ">Computer Organization And Architecture</button></div>
+            </div>
+            <div class="col" style="
+    padding-top: 15px;
+">
+               <div class="demo" onclick="window.location.href = 'ktuqbank.blogspot.com';"><button class="rkmd-btn btn-lightBlue ripple-effect" style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  ">Operating Systems</button></div>
+            </div>
+<p></p>
+<br>
+         </div>
+<div class="row">
+            <div class="col" style="
+    padding-top: 15px;
+">
+               <div class="demo" onclick="window.location.href = 'ktuqbank.blogspot.com';"><button class="rkmd-btn btn-lightBlue ripple-effect"  style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  ">Object Oriented Design And Programming</button></div>
+            </div>
+            <div class="col" style="
+    padding-top: 15px;
+">
+               <div class="demo" onclick="window.location.href = 'ktuqbank.blogspot.com';"><button class="rkmd-btn btn-lightBlue ripple-effect"  style="
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  ">Principles Of Database Design</button></div>
+            </div>
+            
+         </div>
+      </div>
+   </div>
+</div>
+<br>
+<br>
+
+<button class="accordion">About Post</button>
+<div class="panel">
+  
+<h1 style="text-align: center;">About Post</h1>
+
+<h3>About Post </h3>
+This post contains the question paper of APJ Abdul Kalam technological University for the Second year (2nd year) computer science engineering.The question papers for semester 3 – S3 and semester 4 – S4 is here.The full collection of the previous year question papers of KTU for b tech computer science students is available here. The computer exam questions and answer pdf is also available under the section solved question papers.<br><br>
+
+<center><img alt="Computer science KTU Question paper ktu btech" class="wp-image-1297 aligncenter" height="215" src="https://lh3.googleusercontent.com/XusSyKTFAyWYzRJF2eBtyJ4PO4zm2XZ3YqPcoBDCu0Wi0bU8dsDaw5X58Yu8SWzEl4AtaIVEGqt5ysH6TOQMRH7zeH5O395e2TYrAXxP8Ng=w560-h397-rw-no" width="323"></center>
+
+<br>The Quality of the KTU question papers and standard of the questions keeps KTU among the top computer science universities.The KTU question papers are set by the faculties of various famous engineering colleges.One question paper is selected from the thus obtained question papers.Those who have taken the cse group in engineering will be benefited from the same.Slot details are also provided along with the subject names.<br><br>
+
+The Computer science Question Papers are sorted as Full question papers, Main or supple question papers and batch-wise questions. thus making it easier for the KTU students to preview and download.<br><br>
+
+The KTU computer science question paper pattern seems to be having repeated questions. Thus referring to previous question computer papers will be helpful for the students.<br><br>
+
+ 
+
+<h4>Btech Question Papers | 2nd Year | cs engineer</h4>
+
+
+<a href="https://3.bp.blogspot.com/-cTRFj1rBMZA/Xni2kFQ5NpI/AAAAAAAAw-g/6VDOfeskZLkCwXzNrAHn4d78ZmF1KlzZQCEwYBhgL/s1600/Question-paper-ktu.png" imageanchor="1" ><img border="0" src="https://3.bp.blogspot.com/-cTRFj1rBMZA/Xni2kFQ5NpI/AAAAAAAAw-g/6VDOfeskZLkCwXzNrAHn4d78ZmF1KlzZQCEwYBhgL/s1600/Question-paper-ktu.png" data-original-width="560" style="display:none;" data-original-height="397"  alt="Computer Programming-CS100 KTU Question Papers"></a>
+
+<center><img alt="Question paper ktu btech" class="wp-image-1297 aligncenter" height="215" src="https://3.bp.blogspot.com/-cTRFj1rBMZA/Xni2kFQ5NpI/AAAAAAAAw-g/6VDOfeskZLkCwXzNrAHn4d78ZmF1KlzZQCEwYBhgL/s1600/Question-paper-ktu.png" width="323"></center>
+
+The Question papers for the following computer science and engineering subjects are available here<br>
+
+
+<h4>Semester 3 (S4)</h4>
+1.Discrete Computational Structures-(DCS)-CS201<br>
+2.Switching Theory And Logic Design – (STLD)-CS203<br>
+3.Data Structure (DS) – CS205<br>
+4.Electronic Devices And Circuits – (EDC) – CS207<br>
+5.Linear Algebra & C0mplex Analysis (LACA) – MA201<br>
+
+
+<h4>Elective (S4)</h4>
+1.Life Skills (LS)-HS210<br>
+2.Business Economics (BE)<br>
+
+<h4>Semester 4 (S4)</h4>
+1.Object-oriented Design And Programming (OODP) – CS206<br>
+2.Operating Systems (OS)-CS204<br>
+3.Computer Organization & Architecture (COA) – CS202<br>
+4.Principle Of Database Design (PDD) – CS208<br>
+5.Probability Distributions Transforms and numerical methods – (PDNM) – MA202<br><br>
+
+
+</div>
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>

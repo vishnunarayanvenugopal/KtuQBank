@@ -1,0 +1,313 @@
+<style>
+
+/*! CSS Used from: https://use.fontawesome.com/releases/v5.10.0/css/all.css */
+.fa{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1;}
+.fa-download:before{content:"\f019";}
+.fa{font-family:"Font Awesome 5 Free";}
+.fa{font-weight:900;}
+/*! CSS Used from: Embedded */
+*{word-wrap:break-word!important;}
+.post-body-inner *{max-width:100%;}
+/*! CSS Used from: Embedded */
+button{color:inherit;font:inherit;margin:0;}
+button{overflow:visible;}
+button{text-transform:none;}
+button{-webkit-appearance:button;cursor:pointer;}
+button::-moz-focus-inner{border:0;padding:0;}
+.pure-button{display:inline-block;zoom:1;line-height:normal;white-space:nowrap;vertical-align:middle;text-align:center;cursor:pointer;-webkit-user-drag:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-box-sizing:border-box;box-sizing:border-box;}
+.pure-button::-moz-focus-inner{padding:0;border:0;}
+.pure-button{font-family:inherit;font-size:100%;padding:.5em 1em;color:#FFFFFF!important;color:rgba(0,0,0,.8);border:1px solid #999;border:none transparent;background-color:#5cb85c;text-decoration:none;border-radius:2px;}
+.pure-button:focus,.pure-button:hover{background-image:-webkit-gradient(linear,left top,left bottom,from(transparent),color-stop(40%,rgba(0,0,0,.05)),to(rgba(0,0,0,.1)));background-image:-webkit-linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));background-image:linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));}
+.pure-button:focus{outline:0;}
+.pure-button:active{-webkit-box-shadow:0 0 0 1px rgba(0,0,0,.15) inset,0 0 6px rgba(0,0,0,.2) inset;box-shadow:0 0 0 1px rgba(0,0,0,.15) inset,0 0 6px rgba(0,0,0,.2) inset;border-color:#000;}
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+button{font-family:Helvetica, Arial, sans-serif;letter-spacing:0.01em;}
+.pure-button{font-family:inherit;}
+/*! CSS Used from: Embedded */
+*,*:after,*:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+/*! CSS Used fontfaces */
+@font-face{font-family:"Font Awesome 5 Free";font-style:normal;font-weight:400;font-display:auto;src:url(https://use.fontawesome.com/releases/v5.10.0/webfonts/fa-regular-400.eot);src:url(https://use.fontawesome.com/releases/v5.10.0/webfonts/fa-regular-400.eot#iefix) format("embedded-opentype"),url(https://use.fontawesome.com/releases/v5.10.0/webfonts/fa-regular-400.woff2) format("woff2"),url(https://use.fontawesome.com/releases/v5.10.0/webfonts/fa-regular-400.woff) format("woff"),url(https://use.fontawesome.com/releases/v5.10.0/webfonts/fa-regular-400.ttf) format("truetype"),url(https://use.fontawesome.com/releases/v5.10.0/webfonts/fa-regular-400.svg#fontawesome) format("svg");}
+@font-face{font-family:"Font Awesome 5 Free";font-style:normal;font-weight:900;font-display:auto;src:url(https://use.fontawesome.com/releases/v5.10.0/webfonts/fa-solid-900.eot);src:url(https://use.fontawesome.com/releases/v5.10.0/webfonts/fa-solid-900.eot#iefix) format("embedded-opentype"),url(https://use.fontawesome.com/releases/v5.10.0/webfonts/fa-solid-900.woff2) format("woff2"),url(https://use.fontawesome.com/releases/v5.10.0/webfonts/fa-solid-900.woff) format("woff"),url(https://use.fontawesome.com/releases/v5.10.0/webfonts/fa-solid-900.ttf) format("truetype"),url(https://use.fontawesome.com/releases/v5.10.0/webfonts/fa-solid-900.svg#fontawesome) format("svg");}
+
+
+
+
+
+
+
+
+
+
+/*! CSS Used from: Embedded */
+*{word-wrap:break-word!important;}
+.table{display:table;width:100%;}
+.post-body-inner *{max-width:100%;}
+.post-body-inner table{background:#fff;box-shadow:0 0 10px 0 #ccc;}
+.post-body-inner table tr{box-shadow:0 -1px 0 #eee; vertical-align: center; text-align: center;}
+.post-body-inner table tr:first-child{box-shadow:none; }
+.post-body-inner table td,.post-body-inner table th{padding:10px 15px; vertical-align: center; text-align: center;}
+.post-body-inner table th{font-weight:700;}
+.post-body-inner table td{font-size:90%;color:#333;}
+/*! CSS Used from: https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css */
+select{margin:0;font:inherit;color:inherit;}
+select{text-transform:none;}
+table{border-spacing:0;border-collapse:collapse;}
+td,th{padding:0;}
+@media print{
+*,:after,:before{color:#000!important;text-shadow:none!important;background:0 0!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
+tr{page-break-inside:avoid; }
+.table{border-collapse:collapse!important;}
+.table td,.table th{background-color:#fff!important;}
+.table-bordered td,.table-bordered th{border:1px solid #ddd!important;}
+}
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+select{font-family:inherit;font-size:inherit;line-height:inherit;}
+table{background-color:transparent;}
+th{vertical-align: center; text-align: center;}
+.table{width:100%;max-width:100%;margin-bottom:20px;}
+.table>tbody>tr>td,.table>tbody>tr>th{padding:8px;line-height:1.42857143;vertical-align:top;border-top:1px solid #ddd;}
+.table-bordered{border:1px solid #ddd;}
+.table-bordered>tbody>tr>td,.table-bordered>tbody>tr>th{border:1px solid #ddd;}
+.form-control{display:block;width:100%;height:34px;padding:6px 12px;font-size:14px;line-height:1.42857143;color:#555;background-color:#fff;background-image:none;border:1px solid #ccc;border-radius:4px;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);box-shadow:inset 0 1px 1px rgba(0,0,0,.075);-webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;-o-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;}
+.form-control:focus{border-color:#66afe9;outline:0;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);}
+.form-control::-moz-placeholder{color:#999;opacity:1;}
+.form-control:-ms-input-placeholder{color:#999;}
+.form-control::-webkit-input-placeholder{color:#999;}
+.td {  vertical-align: middle;
+text-align: center; }
+
+
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr { 
+    display: block; 
+  }
+
+  .td-headerbreak{display: none;}
+
+.controlwidth { max-width:100% !important  }
+
+  
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  tr { border: 3px solid #ccc; vertical-align: center; }
+  
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 3px solid #eee; 
+    position: relative;
+    padding-left: 50%; 
+    vertical-align: middle;
+  }
+  
+  td:before { 
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+  }
+  
+
+}
+
+.controlwidth { max-width:200px;  vertical-align: center;   }
+
+td { vertical-align: middle !important;}
+
+
+
+</style>
+
+<div class="container" >
+
+<table id="table_format" class="table table-bordered">
+  <tbody>
+    <tr>
+<th class="th-headerbreak">Select Program</th>
+<th class="th-headerbreak"> Select Year</th>
+<td class="td-headerbreak" style="vertical-align: middle;"><center>Details</center></td>
+<td class="td-headerbreak" style="vertical-align: middle;"><center>Download</center></td>
+</tr>
+
+
+
+<tr>
+  <td>B.Tech</td>
+<td>2017</td>
+
+<td class="controlwidth">KTU B.Tech Exam Time Table- Dec 2017 With Subject Name</td>
+<td>
+
+<center><button class="pure-button" onclick="window.location.href = '/2020/04/ktu-b-tech-exam-time-table-dec-2017-subject-name.html';">
+     <i class="fa fa-eye"></i><span class="icon">View Details</span>
+</button></center>
+
+</td>
+
+</tr>
+
+<!-- <tr>
+  <td>M.Tech</td>
+<td>2019</td>
+<td class="controlwidth">Details</td>
+<td>
+<center><button class="pure-button" onclick="window.open('#');">
+     <i class="fa fa-eye"></i><span class="icon">View Details</span>
+</button></center></td>
+</tr> -->
+
+
+
+</tbody></table>
+</div>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script >(function($) {
+
+$.fn.ddTableFilter = function(options) {
+  options = $.extend(true, $.fn.ddTableFilter.defaultOptions, options);
+
+  return this.each(function() {
+    if($(this).hasClass('ddtf-processed')) {
+      refreshFilters(this);
+      return;
+    }
+    var table = $(this);
+    var start = new Date();
+
+    $('th:visible', table).each(function(index) {
+      if($(this).hasClass('skip-filter')) return;
+      var selectbox = $('<select class="form-control">');
+      var values = [];
+      var opts = [];
+      selectbox.append('<option value="--all--">' + $(this).text() + '</option>');
+
+      var col = $('tr:not(.skip-filter) td:nth-child(' + (index + 1) + ')', table).each(function() {
+        var cellVal = options.valueCallback.apply(this);
+        if(cellVal.length == 0) {
+          cellVal = '--empty--';
+        }
+        $(this).attr('ddtf-value', cellVal);
+
+        if($.inArray(cellVal, values) === -1) {
+          var cellText = options.textCallback.apply(this);
+          if(cellText.length == 0) {cellText = options.emptyText;}
+          values.push(cellVal);
+          opts.push({val:cellVal, text:cellText});
+        }
+      });
+      if(opts.length < options.minOptions){
+        return;
+      }
+      if(options.sortOpt) {
+        opts.sort(options.sortOptCallback);
+      }
+      $.each(opts, function() {
+        $(selectbox).append('<option value="' + this.val + '">' + this.text + '</option>')
+      });
+
+      $(this).wrapInner('<div style="display:none">');
+      $(this).append(selectbox);
+
+      selectbox.bind('change', {column:col}, function(event) {
+        var changeStart = new Date();
+        var value = $(this).val();
+
+        event.data.column.each(function() {
+          if($(this).attr('ddtf-value') === value || value == '--all--') {
+            $(this).removeClass('ddtf-filtered');
+          }
+          else {
+            $(this).addClass('ddtf-filtered');
+          }
+        });
+        var changeStop = new Date();
+        if(options.debug) {
+          console.log('Search: ' + (changeStop.getTime() - changeStart.getTime()) + 'ms');
+        }
+        refreshFilters(table);
+
+      });
+      table.addClass('ddtf-processed');
+      if($.isFunction(options.afterBuild)) {
+        options.afterBuild.apply(table);
+      }
+    });
+
+    function refreshFilters(table) {
+      var refreshStart = new Date();
+      $('tr', table).each(function() {
+        var row = $(this);
+        if($('td.ddtf-filtered', row).length > 0) {
+          options.transition.hide.apply(row, options.transition.options);
+        }
+        else {
+          options.transition.show.apply(row, options.transition.options);
+        }
+      });
+
+      if($.isFunction(options.afterFilter)) {
+        options.afterFilter.apply(table);
+      }
+
+      if(options.debug) {
+        var refreshEnd = new Date();
+        console.log('Refresh: ' + (refreshEnd.getTime() - refreshStart.getTime()) + 'ms');
+      }
+    }
+
+    if(options.debug) {
+      var stop = new Date();
+      console.log('Build: ' + (stop.getTime() - start.getTime()) + 'ms');
+    }
+  });
+};
+
+$.fn.ddTableFilter.defaultOptions = {
+  valueCallback:function() {
+    return encodeURIComponent($.trim($(this).text()));
+  },
+  textCallback:function() {
+    return $.trim($(this).text());
+  },
+  sortOptCallback: function(a, b) {
+    return a.text.toLowerCase() > b.text.toLowerCase();
+  },
+  afterFilter: null,
+  afterBuild: null,
+  transition: {
+    hide:$.fn.hide,
+    show:$.fn.show,
+    options: []
+  },
+  emptyText:'--Empty--',
+  sortOpt:true,
+  debug:false,
+  minOptions:2
+}
+
+})(jQuery);
+</script>
+<script>
+jQuery('#table_format').ddTableFilter();
+</script>

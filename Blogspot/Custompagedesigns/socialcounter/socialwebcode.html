@@ -1,0 +1,105 @@
+<script>
+     function socialget()
+  {
+    
+    setInterval(function(){ 
+      
+      $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1VuERT1pGB9LnqbL-63U9pLjESj4Y82Z6EFbFSMpZ0DQ/values/Sheet1?alt=json&key=AIzaSyBvgVW5FHCztKnf-QivY-H2njLxyrtwfu8", function(result){
+    var Whatsapp=result.values[1][0];
+   var Telegram=result.values[1][1];
+    var Instagram=result.values[1][2];
+        document.getElementById("Telegram").innerHTML = Telegram.replace(" ", "");
+         document.getElementById("Whatsapp").innerHTML = Whatsapp;
+         document.getElementById("Instagram").innerHTML = Instagram;
+  return [Whatsapp,Telegram,Instagram];
+        
+        
+   }); }, 5000);
+     
+}
+   
+     document.getElementById("demo").innerHTML = socialget()[0];
+</script>
+
+<center>
+  
+   <div class="speccounter" ><i class="fa fa-bell" aria-hidden="true"></i>
+     <b class="title" style="normal normal 12px 'Roboto', sans-serif ;" >Join KTU Live Updates</b>
+    </div>
+  
+  <div class="section group" style="font: font: normal normal 12px 'Roboto', sans-serif;">
+  <a href="http://link.ktuqbank.com/join" target="_blank"><div class="col span_1_of_3counter">
+  <div class="whatsapp-counter"><i class="fa fa-whatsapp" aria-hidden="true"></i>
+      Whatsapp
+      <div class="detail"><div id="Whatsapp" style="padding-top: 05px; ">%</div></div>
+    </div>
+      </div></a>
+  <a href="https://t.me/ktuliveupdates" target="_blank"><div class="col span_1_of_3counter">
+  <div class="telegram-counter"><i class="fa fa-telegram" aria-hidden="true"></i>
+      Telegram
+      <div class="detail"><div id="Telegram" style="padding-top: 05px;">%</div></div>
+    </div>
+      </div></a>
+  <a href="https://instagram.com/ktuqbank" target="_blank"><div class="col span_1_of_3counter">
+  <div class="instagram-counter"><i class="fa fa-instagram" aria-hidden="true"></i>
+Instagram
+      <div class="detail"><div id="Instagram" style="padding-top: 05px;">%</div></div>
+    </div>
+      </div></a>
+</div></center>
+
+
+<style>
+  
+  
+  /*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3counter { width: 32.26%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 280px) {
+  .col {  margin: 1% 0 1% 0%; }
+  .span_3_of_3, .span_2_of_3, .span_1_of_3counter { width: 100%; }
+}
+  
+  
+.whatsapp-counter{display:inline-block;line-height:1;vertical-align:baseline;margin:0 .14285714em;background-color:#e8e8e8;background-image:none;padding:.5833em .833em;color:rgba(0,0,0,.6);text-transform:none;font-weight:700;border:0 solid transparent;border-radius:.28571429rem;-webkit-transition:background .1s ease;transition:background .1s ease;}
+.whatsapp-counter:last-child{margin-right:0;}
+.whatsapp-counter>.detail{display:inline-block;vertical-align:top;font-weight:700;margin-left:1em;opacity:.8;}
+.whatsapp-counter{font-size:.85714286rem;}
+  
+.telegram-counter{display:inline-block;line-height:1;vertical-align:baseline;margin:0 .14285714em;background-color:#e8e8e8;background-image:none;padding:.5833em .833em;color:rgba(0,0,0,.6);text-transform:none;font-weight:700;border:0 solid transparent;border-radius:.28571429rem;-webkit-transition:background .1s ease;transition:background .1s ease;}
+.telegram-counter:last-child{margin-right:0;}
+.telegram-counter>.detail{display:inline-block;vertical-align:top;font-weight:700;margin-left:1em;opacity:.8;}
+.telegram-counter{font-size:.85714286rem;}
+  
+  
+  .instagram-counter{display:inline-block;line-height:1;vertical-align:baseline;margin:0 .14285714em;background-color:#e8e8e8;background-image:none;padding:.5833em .833em;color:rgba(0,0,0,.6);text-transform:none;font-weight:700;border:0 solid transparent;border-radius:.28571429rem;-webkit-transition:background .1s ease;transition:background .1s ease;}
+  .instagram-counterr:last-child{margin-right:0;}
+  .instagram-counter>.detail{display:inline-block;vertical-align:top;font-weight:700;margin-left:1em;opacity:.8;}
+  .instagram-counter{font-size:.85714286rem;}
+  
+  .speccounter {    font: normal normal 15px 'Roboto', sans-serif; font-weight: 1500;}
+  
+</style>

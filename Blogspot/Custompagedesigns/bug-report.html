@@ -1,0 +1,215 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+
+<div class="container">
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo" style="
+    float: right !important;
+"> <i class="fa fa-bug"></i></button>
+  <div id="demo" class="collapse">
+  <center><h2 >Report Bugs & Issues</h2></center>
+
+<form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off"> 
+<input id="nameField" name="entry.485428648" placeholder="Enter your name" type="text" required /> 
+<input id="emailField" name="entry.879531967" placeholder="Enter your email" type="email" required /> 
+<input id="mobField" name="entry.680202883" placeholder="Enter your 10 Digit Phone Number" type="text" pattern="^\d{10}$" required />  
+<input id="questionField" name="entry.326955045" placeholder="Enter issue" type="text" required /> 
+ 
+<button id="send" type="submit" class="common_btn" >Report Bug</button>
+</form>
+
+<h3 id="success-msg" style="text-align: center !important; margin-top:190px !important; display:none; "> Thanks For Reporting Issue..!! We will get back to you</h3>
+  </div>
+</div>
+
+<style>
+  /*! CSS Used from: Embedded */
+*.container{word-wrap:break-word!important;}
+.post-body h2{margin:1em 0 .5em 0;}
+.post-body-inner *{max-width:100%;}
+/*! CSS Used from: https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css */
+.*,::after,::before{box-sizing:border-box;}
+h2.container{margin-top:0;margin-bottom:.5rem;}
+p.container{margin-top:0;margin-bottom:1rem;}
+button.container{border-radius:0;}
+button:focus.container{outline:1px dotted;outline:5px auto -webkit-focus-ring-color;}
+button.container{margin:0;font-family:inherit;font-size:inherit;line-height:inherit;}
+button.container{overflow:visible;}
+button.container{text-transform:none;}
+[type=button],button{-webkit-appearance:button;}
+[type=button]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none;}
+h2.container{margin-bottom:.5rem;font-weight:500;line-height:1.2;}
+h2.container{font-size:2rem;}
+.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}
+@media (min-width:576px){
+.container{max-width:540px;}
+}
+@media (min-width:768px){
+.container{max-width:720px;}
+}
+@media (min-width:992px){
+.container{max-width:960px;}
+}
+@media (min-width:1200px){
+.container{max-width:1140px;}
+}
+@media (min-width:576px){
+.container{max-width:540px;}
+}
+@media (min-width:768px){
+.container{max-width:720px;}
+}
+@media (min-width:992px){
+.container{max-width:960px;}
+}
+@media (min-width:1200px){
+.container{max-width:1140px;}
+}
+.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;padding:.155rem .275rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
+@media (prefers-reduced-motion:reduce){
+.btn{transition:none;}
+}
+.btn:hover{color:#212529;text-decoration:none;}
+.btn:focus{outline:0;box-shadow:0 0 0 .2rem rgba(0,123,255,.25);}
+.btn:disabled{opacity:.65;}
+.btn-primary{color:#fff;background-color:#db2828;border-color:#db2828;}
+.btn-primary:hover{color:#fff;background-color:#d01919;border-color:#0062cc;}
+.btn-primary:focus{color:#fff;background-color:#0069d9;border-color:#0062cc;box-shadow:0 0 0 .2rem rgba(38,143,255,.5);}
+.btn-primary:disabled{color:#fff;background-color:#007bff;border-color:#007bff;}
+.collapse:not(.show){display:none;}
+@media print{
+*,::after,::before{text-shadow:none!important;box-shadow:none!important;}
+h2,p.container{orphans:3;widows:3;}
+h2.container{page-break-after:avoid;}
+.container{min-width:992px!important;}
+}
+</style>
+
+
+
+
+
+<script>
+function postToGoogle() {
+                var field1 = $("#nameField").val();
+                var field2 = $("#emailField").val();
+                var field3 = $("#mobField").val();
+var field4 = $("#questionField").val();
+var feild5 = window.location.href;
+              
+        
+        if(field1 == ""){
+          alert('Please Fill Your Name');
+          document.getElementById("nameField").focus();
+          return false;
+        }
+        if(field2 == ""){
+          alert('Please Fill Your Email');
+          document.getElementById("emailField").focus();
+          return false;
+        }
+        if(field3 == "" || field3.length > 10 || field3.length < 10){
+          alert('Please Fill Your Mobile Number');
+          document.getElementById("mobField").focus();
+          return false;
+        }
+if(field4 == ""){
+          alert('Please Enter Bug details');
+          document.getElementById("questionField").focus();
+          return false;
+        }
+
+
+        
+  
+                $.ajax({
+                    url: "https://docs.google.com/forms/d/e/1FAIpQLScwhbmM8t572vE8It44T_x_9sLPqOTOl1wlDuSLoEg0b8JSEg/formResponse?",
+          data: {"entry.485428648": field1, "entry.879531967": field2, "entry.680202883": field3, "entry.326955045": field4,"entry.1696159737": feild5},
+                    type: "POST",
+                    dataType: "xml",
+                    success: function(d)
+          {
+          },
+          error: function(x, y, z)
+            {
+
+              $('#success-msg').show();
+              $('#form').hide();
+              
+            }
+                });
+        return false;
+            }
+</script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<style>
+#demo form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=email], select {
+  width: 49%;
+  font-size:20px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#demo button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+#demo button:hover {
+  opacity: 0.8;
+}
+
+#demo .cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+#demo .imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+#demo img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+#demo .container {
+  padding: 16px;
+}
+
+#demo span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+</style>
