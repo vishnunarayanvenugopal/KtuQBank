@@ -4,8 +4,6 @@
     text-align: left !important;
 }
 
-
-/*! CSS Used from: https://ktu.edu.in/css/styles.css */
 .latest-news a{color:#295780;text-decoration:none;}
 .latest-news a:hover{text-decoration:underline;}
 .news-blocks{border:7px solid #00679a;display:block;float:left;width:-webkit-fill-available;}
@@ -25,100 +23,68 @@ a.events-upcoming:hover{color:#258EC5;}
 </style>
 
 <div class="news-blocks">
-      
-<!--         <div class="news-title">Login for KTU e-Gov Platform</div>
--->         <div class="latest-news">
-          
-                 <ul>  
-                 <!-- <div class="news-title" style="position: relative;" >Upcoming events</div>     -->
-<li style="line-height: 15px;
-    text-align: center;">
-                        <a href="#" target="_blank" style="text-transform:uppercase; font-weight:bold; ">Login for KTU e-Gov Platform  </a>
-                        </li>  
-  </ul>
-<div class="news-title">Announcements</div>  
-            <ul class="annuncement" style="height:158px;overflow: auto;">
+  <div class="latest-news">
+    <ul>
+      <li style="line-height: 15px; text-align: center;">
+        <a href="#" target="_blank" style="text-transform:uppercase; font-weight:bold;">Login for KTU e-Gov Platform</a>
+      </li>  
+    </ul>
 
+    <div class="news-title">Announcements</div>  
+    <ul class="annuncement" style="height:158px;overflow:auto;">
+      <!-- Dynamic announcement posts will be inserted here -->
+    </ul>
 
+    <ul class="annuncement">
+      <li>
+        <div class="news-more">
+          <a href="/search/label/announcement" style="font-size:10px">View All &gt;&gt;</a>
+        </div>
+      </li>
+    </ul>
 
+    <div class="news-title" style="position: relative;"></div>
+    <ul class="annuncement">
+      <li>
+        <a href="http://highereducation.kerala.gov.in/" target="_blank" class="events-upcoming" style="padding:0px 5px 0px 15px !important;" align="center">
+          <img src="https://4.bp.blogspot.com/-IQ0gSXcrKA0/XndJM94YeEI/AAAAAAAAw5A/F68d_n0V634rhcEtVUz19xd-Wz8dcLysACPcBGAYYCw/s1600/higher_education_dept.jpg" />
+        </a>
+      </li>
+      <li>
+        <a href="http://ihrd.kerala.gov.in/studentsportal/" target="_blank" class="events-upcoming" style="padding:0px 8px 0px 15px !important;">
+          <div class="news-titles">
+            <img src="https://1.bp.blogspot.com/-M0eqiyonw-Q/XndJNO63_pI/AAAAAAAAw44/4ASlOJGN7rYoakbOkeAtQiIgIZ6WuKEWgCPcBGAYYCw/s1600/for_the_students.jpg" />
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
 
+<script>
+  function handleFeed(json) {
+    const list = document.querySelector('.latest-news ul.annuncement');
+    const entries = json.feed.entry || [];
 
-                
-                <li style=""><label>Apr 4, 2020 <b><img src="https://lh3.googleusercontent.com/-R1to9qH80zo/XndJNDSMHJI/AAAAAAAAw40/5K5z70QbMm4ufypQd9FXIvBKPzVAd1m1wCLcBGAsYHQ/h120/ktu-new-notification.gif" /></b></label>
-                
-                
-                <b><a target="_blank" href="#">Result published - B.Tech S6(S) Dec 2019</a></b>
-                
-                
-                
-                    </li>  
-                
-                <li style=""><label>Apr 2, 2020 <b><img src="https://lh3.googleusercontent.com/-R1to9qH80zo/XndJNDSMHJI/AAAAAAAAw40/5K5z70QbMm4ufypQd9FXIvBKPzVAd1m1wCLcBGAsYHQ/h120/ktu-new-notification.gif" /></b></label>
-                
-                
-                <b><a target="_blank" href="#">Complaints on the low Pass percentage in S3 BTech results</a></b>
-                
-                
-                
-                    </li>  
-                
-                <li style=""><label>Apr 1, 2020 <b><img src="https://lh3.googleusercontent.com/-R1to9qH80zo/XndJNDSMHJI/AAAAAAAAw40/5K5z70QbMm4ufypQd9FXIvBKPzVAd1m1wCLcBGAsYHQ/h120/ktu-new-notification.gif" /></b></label>
-                
-                
-                <b><a target="_blank" href="#">APJAKTU Emergency Ventilator Challenge - URGENT</a></b>
-                
-                
-                
-                    </li>  
-                
-                <li style=""><label>Mar 30, 2020 <b><img src="https://lh3.googleusercontent.com/-R1to9qH80zo/XndJNDSMHJI/AAAAAAAAw40/5K5z70QbMm4ufypQd9FXIvBKPzVAd1m1wCLcBGAsYHQ/h120/ktu-new-notification.gif" /></b></label>
-                
-                
-                <b><a target="_blank" href="#">The results of MBA T4 (RS) Exam Nov 2019 published</a></b>
-                
-                
-                
-                    </li>  
-                
-                <li style=""><label>Mar 24, 2020 <b><img src="https://lh3.googleusercontent.com/-R1to9qH80zo/XndJNDSMHJI/AAAAAAAAw40/5K5z70QbMm4ufypQd9FXIvBKPzVAd1m1wCLcBGAsYHQ/h120/ktu-new-notification.gif" /></b></label>
-                
-                
-                <b><a target="_blank" href="#">Affiliation Last Date Extended</a></b>
-                
-                
-                
-                    </li>  
-                
-              
-        </ul>
-        <ul class="annuncement">
-                <li>
-            <div class="news-more"><a href="/eu/core/announcements.htm" style="font-size:10px">View All &gt;&gt;</a></div>
-            </li>
-            </ul>
-        <div class="news-title" style="position: relative;"><!-- Upcoming events --></div>
-           <ul class="annuncement">
-      
-        <!--
-        <li>
-         <div class="" style="position: relative;" >No Upcoming Events</div>
-        <a href="#" target="_blank" class="events-upcoming"><b style="float: right; padding-top: 12px;"><img src="images/new.gif"></b> <span style="display: inline-block;  width: 197px;">KETCON &amp; TEKON 2018No Upcoming Events</span> </a>
-        </li>
--->
-      
-  <li>
-  <a href="http://highereducation.kerala.gov.in/" target="_blank" class="events-upcoming" style="padding:0px 5px 0px 15px !important;" align="center"><img src="https://4.bp.blogspot.com/-IQ0gSXcrKA0/XndJM94YeEI/AAAAAAAAw5A/F68d_n0V634rhcEtVUz19xd-Wz8dcLysACPcBGAYYCw/s1600/higher_education_dept.jpg" /></a>
-  </li>
-  <div class="news-title" style="position: relative;"></div>
-  <ul>
+    entries.slice(0, 5).forEach(entry => {
+      const title = entry.title.$t;
+      const link = entry.link.find(l => l.rel === "alternate").href;
+      const date = new Date(entry.published.$t);
+      const formattedDate = date.toLocaleDateString('en-GB', {
+        day: 'numeric', month: 'short', year: 'numeric'
+      });
 
-                        <li>
-                        <a href="http://ihrd.kerala.gov.in/studentsportal/" target="_blank" class="events-upcoming" style="padding:0px 8px 0px 15px !important;"><div class="news-titles"><img src="https://1.bp.blogspot.com/-M0eqiyonw-Q/XndJNO63_pI/AAAAAAAAw44/4ASlOJGN7rYoakbOkeAtQiIgIZ6WuKEWgCPcBGAYYCw/s1600/for_the_students.jpg" /></div> </a>
-                        </li>
-                        </ul>
-        <!--  <li>
-        <a href="/data/FACULTY TRAINING PROGRAMME IN.docx" target="_blank" class="events-upcoming"><b style="float: right; padding-top: 12px;"><img src="images/new.gif"></b> <span style="display: inline-block;  width: 197px;">FACULTY TRAINING PROGRAMME IN &quot;ESSENTIAL MATHEMATICS FOR ENGINEERING&quot;</span> </a>
-        </li>
-        </ul>  -->
-            </ul></div><b>
-        </b></div>
+      const li = document.createElement("li");
+      li.innerHTML = `
+        <label>${formattedDate} <b><img src="https://lh3.googleusercontent.com/-R1to9qH80zo/XndJNDSMHJI/AAAAAAAAw40/5K5z70QbMm4ufypQd9FXIvBKPzVAd1m1wCLcBGAsYHQ/h120/ktu-new-notification.gif" /></b></label>
+        <b><a target="_blank" href="${link}">${title}</a></b>
+      `;
+      list.appendChild(li);
+    });
+  }
+
+  // Load the Blogger feed as JSONP
+  const script = document.createElement('script');
+  script.src = "https://ktuqbank.com/feeds/posts/default/-/announcement?alt=json-in-script&callback=handleFeed";
+  document.body.appendChild(script);
+</script>
